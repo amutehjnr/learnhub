@@ -31,7 +31,7 @@ function AccessPage() {
     <div className="access-page">
 
       {/* TOP BAR */}
-      <div className="access-top">
+      {/* <div className="access-top">
         <span className="access-brand-text">Biggeneration</span>
 
         <div className="device-switcher">
@@ -43,7 +43,7 @@ function AccessPage() {
         <button className="close-button" type="button">
           ×
         </button>
-      </div>
+      </div> */}
 
       {/* PROMO AREA */}
       <section className="promo-section">
