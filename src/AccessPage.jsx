@@ -50,7 +50,7 @@ function AccessPage() {
 
         <div className="promo-logo">
           <img
-            src="/biggeneration-logo.png"
+            src="/biggeneration-logo.svg"
             alt="Big Generation"
           />
         </div>
