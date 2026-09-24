@@ -412,7 +412,7 @@ function App() {
                       <strong>{product.price}</strong>
 
                       <a
-                        href={product.selarLink}
+                        href="/access"
                         className="product-button"
                         aria-label={`Get ${product.title}`}
                       >

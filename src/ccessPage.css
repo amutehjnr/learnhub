@@ -1,0 +1,495 @@
+* {
+  box-sizing: border-box;
+}
+
+.access-page {
+  min-height: 100vh;
+  background: #e8f6ff;
+  color: #202020;
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+/* ================================
+   TOP BAR
+================================ */
+
+.access-top {
+  height: 58px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+  position: relative;
+  z-index: 10;
+}
+
+.access-brand-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #111111;
+}
+
+.device-switcher {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 11px 18px;
+
+  border-radius: 8px;
+
+  background: #eef8ff;
+
+  color: #239bd9;
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.desktop-icon {
+  font-size: 16px;
+}
+
+.down-arrow {
+  margin-left: 3px;
+  font-size: 17px;
+}
+
+.close-button {
+  width: 38px;
+  height: 38px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #eaf8ff;
+
+  color: #159de0;
+
+  font-size: 30px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+/* ================================
+   PROMO
+================================ */
+
+.promo-section {
+  min-height: 220px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 30px 25px;
+
+  background: #d9d9d9;
+}
+
+.promo-logo {
+  width: 220px;
+  height: 145px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+}
+
+.promo-logo img {
+  width: 88%;
+  height: 88%;
+  object-fit: contain;
+}
+
+.click-button {
+  min-width: 140px;
+
+  padding: 18px 25px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #159fe4;
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* ================================
+   CONTENT
+================================ */
+
+.access-content {
+  width: 100%;
+  max-width: 760px;
+
+  margin: 0 auto;
+
+  padding: 0 10px 100px;
+}
+
+.access-content h1 {
+  margin: 0;
+  padding: 13px 5px 16px;
+
+  text-align: center;
+
+  color: #737373;
+
+  font-size: 18px;
+  line-height: 1.55;
+
+  font-weight: 700;
+}
+
+.content-placeholder {
+  height: 61px;
+
+  margin-bottom: 14px;
+
+  background: #ffffff;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 6px;
+}
+
+/* ================================
+   FORM CARD
+================================ */
+
+.form-card {
+  padding: 10px;
+
+  background: #ffffff;
+
+  border: 1px solid #d9d9d9;
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.05),
+    0 5px 15px rgba(0, 0, 0, 0.04);
+}
+
+.form-card form {
+  width: 100%;
+}
+
+.form-card input[type="text"],
+.form-card input[type="email"] {
+  width: 100%;
+
+  height: 60px;
+
+  margin-bottom: 12px;
+
+  padding: 0 24px;
+
+  border: 2px solid #dedede;
+
+  border-radius: 13px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #222222;
+
+  font-size: 18px;
+
+  transition: border-color 0.2s ease;
+}
+
+.form-card input[type="text"]:focus,
+.form-card input[type="email"]:focus {
+  border-color: #159fe4;
+}
+
+.form-card input::placeholder {
+  color: #252525;
+  opacity: 1;
+}
+
+/* ================================
+   AGREEMENT
+================================ */
+
+.agreement {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin: 4px 0 18px;
+
+  padding-left: 2px;
+
+  color: #888888;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.agreement input {
+  width: 20px;
+  height: 20px;
+
+  flex-shrink: 0;
+
+  cursor: pointer;
+}
+
+/* ================================
+   SUBMIT
+================================ */
+
+.access-submit {
+  width: 100%;
+
+  min-height: 87px;
+
+  border: none;
+  border-radius: 13px;
+
+  background: #139fe5;
+
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.access-submit:hover {
+  background: #0b91d3;
+}
+
+.access-submit:active {
+  transform: scale(0.99);
+}
+
+.access-submit strong {
+  font-size: 20px;
+  letter-spacing: 0.2px;
+}
+
+.access-submit span {
+  margin-top: 5px;
+
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 700px) {
+  .access-top {
+    padding: 0 12px;
+  }
+
+  .access-brand-text {
+    font-size: 15px;
+  }
+
+  .device-switcher {
+    padding: 9px 13px;
+    font-size: 13px;
+  }
+
+  .promo-section {
+    min-height: 200px;
+
+    padding: 25px 14px;
+  }
+
+  .promo-logo {
+    width: 215px;
+    height: 140px;
+  }
+
+  .click-button {
+    min-width: 125px;
+
+    padding: 16px 20px;
+
+    font-size: 15px;
+  }
+
+  .access-content h1 {
+    font-size: 17px;
+  }
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 500px) {
+  .access-top {
+    height: 57px;
+  }
+
+  .access-brand-text {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    transform: translateY(0);
+
+    font-size: 16px;
+  }
+
+  .device-switcher {
+    left: 50%;
+
+    padding: 10px 13px;
+
+    font-size: 13px;
+  }
+
+  .close-button {
+    width: 36px;
+    height: 36px;
+
+    font-size: 27px;
+  }
+
+  .promo-section {
+    min-height: 220px;
+
+    padding: 25px 12px;
+
+    gap: 20px;
+  }
+
+  .promo-logo {
+    width: 215px;
+    height: 145px;
+  }
+
+  .click-button {
+    min-width: 125px;
+
+    padding: 17px 15px;
+
+    font-size: 14px;
+  }
+
+  .access-content {
+    padding: 0 7px 80px;
+  }
+
+  .access-content h1 {
+    padding: 12px 5px 18px;
+
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .content-placeholder {
+    height: 60px;
+  }
+
+  .form-card {
+    padding: 10px;
+
+    border-radius: 23px;
+  }
+
+  .form-card input[type="text"],
+  .form-card input[type="email"] {
+    height: 60px;
+
+    padding: 0 22px;
+
+    font-size: 17px;
+
+    border-radius: 12px;
+  }
+
+  .agreement {
+    align-items: flex-start;
+
+    font-size: 15px;
+
+    line-height: 1.35;
+  }
+
+  .agreement input {
+    margin-top: 1px;
+  }
+
+  .access-submit {
+    min-height: 87px;
+  }
+
+  .access-submit strong {
+    font-size: 19px;
+  }
+
+  .access-submit span {
+    font-size: 14px;
+  }
+}
+
+/* ================================
+   VERY SMALL PHONES
+================================ */
+
+@media (max-width: 380px) {
+  .device-switcher {
+    font-size: 11px;
+    padding: 9px 10px;
+  }
+
+  .promo-section {
+    padding: 22px 8px;
+  }
+
+  .promo-logo {
+    width: 185px;
+    height: 130px;
+  }
+
+  .click-button {
+    min-width: 105px;
+    padding: 14px 10px;
+  }
+
+  .access-content h1 {
+    font-size: 14px;
+  }
+
+  .form-card input[type="text"],
+  .form-card input[type="email"] {
+    font-size: 16px;
+  }
+}
